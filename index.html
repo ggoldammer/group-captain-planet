@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
 
@@ -12,35 +13,63 @@
     <script src="assets/javascript/game-gg.js"></script>
     <script src="assets/javascript/game-gq.js"></script>
     <script src="assets/javascript/game-xg.js"></script>
+    <script src="assets/javascript/game-rd.js"></script>
 
 </head>
+
 <body>
-    <div>
-        jumbotron
-        <h1>name</h1>
-        <p>stuff</p>
-        <button>btn1</button>
-        <button>btn2</button>
-    </div>
+    <div class="container">
+        <div class="jumbotron text-center">
 
-    <h2>chang size</h2>
-    <button id="cs-norm">Normal</button>
-    <button id="cs-grow">grow</button>
-    <button id="cs-shink">shrink</button>
+            <h1>Captian Planet</h1>
+            <p>He's our hero</p>
+            <button id="th-play" class="btn btn-primary btn-warning">
+                <i class="fa fa-music" aria-hidden="true"></i> Play Theam</button>
+            <button id="th-stop" class="btn btn-light">
+                <i class="fa fa-pause" aria-hidden="true"></i> Stop Theam</button>
+        </div>
 
-    <br>
-    <h2>invisability</h2>
-    
-    <button id="in-visible">visible</button>
-    <button id="in-invisible">invisability</button>
-
-    <br>
-    <h2>Stretch</h2>
-    <button id="st-normal">Normal</button>
-    <button id="st-stretch">stretch</button>
+        <div class="row">
+            <div class="col-lg-5">
 
                 <div class="card text-center">
-    <img class="img captain-planet" src="http://screencrush.com/442/files/2013/06/captain-planet-01.jpg" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+                    <h2>Power - Chang Size</h2>
+                    <div class="container my-2">
+                        <button id="cs-norm" class="btn">Normal</button>
+                        <button id="cs-grow" class="btn btn-primary">
+                            <i class="fa fa-plus" aria-hidden="true"></i> Grow</button>
+                        <button id="cs-shink" class="btn btn-danger">
+                            <i class="fa fa-minus" aria-hidden="true"></i> Shrink</button>
+                    </div>
+                </div>
 
+                <br>
+                <div class="card text-center">
+                    <h2>Power - Invisability</h2>
+                    <div class="container my-2">
+
+                        <button id="in-visible" class="btn btn-secondary">
+                            <i class="fa fa-eye" aria-hidden="true"></i> Visible</button>
+                        <button id="in-invisible" class="btn btn-info">
+                            <i class="fa fa-eye-slash" aria-hidden="true"></i> Invisability</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card text-center">
+                    <h2>Power - Stretch</h2>
+                    <div class="container my-2">
+                        <button id="st-normal" class="btn">Normal</button>
+                        <button id="st-stretch" class="btn"><i class="fa fa-expand" aria-hidden="true"></i> Stretch</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <img class="img captain-planet" src="http://screencrush.com/442/files/2013/06/captain-planet-01.jpg" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
